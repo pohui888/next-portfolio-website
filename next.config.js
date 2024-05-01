@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  // next/image un-configured host
+  // experimental: {
+  //   serverActions: true,
+  // },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
