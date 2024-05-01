@@ -21,4 +21,4 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Deploy on Vercel
 
-Visit portfilio at [https://tph-portfolio.vercel.app/]
+Visit portfilio at https://tph-portfolio.vercel.app/
