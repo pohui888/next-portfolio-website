@@ -15,3 +15,30 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+/* import React from "react"; */
+/* import { IoHomeOutline } from "react-icons/io5";
+import { BsBuildings } from "react-icons/bs";
+import { GoHourglass } from "react-icons/go";
+import { FaRegEnvelope } from "react-icons/fa";
+import { PiNewspaperClipping } from "react-icons/pi";
+import { SlCalender } from "react-icons/sl";
+import { FiMessageCircle } from "react-icons/fi";
+import { IoSettingsOutline } from "react-icons/io5";
+import { RiAdminLine } from "react-icons/ri";
+
+const Slider = () => {
+  return (
+    <div className="bg-indigo-500 w-16 h-[30rem] rounded-r-[35px] mt-5 flex flex-col items-center justify-center p-10 gap-4">
+      <IoHomeOutline color="white" size={30} />
+      <BsBuildings color="white" size={30} />
+      <GoHourglass color="white" size={30} />
+      <FaRegEnvelope color="white" size={30} />
+      <PiNewspaperClipping color="white" size={30} />
+      <SlCalender color="white" size={30} />
+      <FiMessageCircle color="white" size={30} />
+      <IoSettingsOutline color="white" size={30} />
+      <RiAdminLine color="white" size={30} />
+    </div>
+  );
+}; */
