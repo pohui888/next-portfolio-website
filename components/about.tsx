@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { useSectionInView } from "@/lib/hooks";
-import { motion } from "framer-motion";
-import SectionHeading from "./section-heading";
+import { useSectionInView } from '@/lib/hooks';
+import { motion } from 'framer-motion';
+import SectionHeading from './section-heading';
 
 const About = () => {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView('About');
 
   return (
     <motion.section
@@ -18,28 +18,20 @@ const About = () => {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        After being exposed to various programming languages at school, I found
-        myself deeply interested in{" "}
-        <span className="font-medium">website development.</span> Therefore, by
-        2023, I focused on <span className="italic">frontend development</span>{" "}
-        and learned <span className="font-medium">React and Next.js.</span>{" "}
-        During this time, I also became familiar with{" "}
-        <span className="font-medium">TypeScript and Prisma.</span> In 2024, I
-        started learning <span className="italic">backend development</span>{" "}
-        frameworks such as{" "}
-        <span className="font-medium">Node.js, Express, and MongoDB</span> to
-        fulfill my goal of becoming a{" "}
-        <span className="italic">full-stack developer.</span> I also attend
-        technology seminars such as{" "}
-        <span className="font-medium">
-          AWS, Web3, and Google Cloud Console,
-        </span>{" "}
-        to keep pace with the latest technological advancements. I am currently
-        looking for a{" "}
-        <span className="font-medium">Internship job opportunity</span> as a
-        software developer.
+        I am a recent graduate and a passionate{' '}
+        <span className="font-medium">software developer.</span> During my
+        2-year diploma program, I focused primarily on building{' '}
+        <span className="font-medium">frontend development</span> skills while
+        also gaining foundational knowledge in backend programming. To apply my
+        learning to real-world projects, I chose a{' '}
+        <span className="font-medium">frontend developer internship,</span>{' '}
+        where I contributed to the development of commercial websites. Through
+        this experience, I honed my ability to create responsive, user-friendly,
+        and visually appealing applications while collaborating with
+        cross-functional teams. I am eager to continue growing as a developer,
+        exploring modern technologies, and contributing to impactful projects in
+        the industry.
       </p>
-
       <p>
         <span className="font-medium italic">What's the future?</span> I would
         like to delve into WebGL and Three.js, combining them with web

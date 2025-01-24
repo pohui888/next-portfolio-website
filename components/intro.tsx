@@ -1,18 +1,18 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React from "react";
-import selfphotoImg from "@/public/selfPhoto.png";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
-import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active-section-context";
+import Image from 'next/image';
+import React from 'react';
+import selfphotoImg from '@/public/selfPhoto.png';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { BsArrowRight } from 'react-icons/bs';
+import { HiDownload } from 'react-icons/hi';
+import { FaGithubSquare } from 'react-icons/fa';
+import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 const Intro = () => {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView('Home', 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
@@ -27,7 +27,7 @@ const Intro = () => {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "tween",
+              type: 'tween',
               duration: 0.2,
             }}
           >
@@ -47,13 +47,13 @@ const Intro = () => {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "spring", // bouncy effect
+              type: 'spring', // bouncy effect
               stiffness: 125, // customize the bouncy effect
               delay: 0.1,
               duration: 0.7,
             }}
           >
-            👨‍🎓
+            👨‍💻
           </motion.span>
         </div>
       </div>
@@ -63,10 +63,14 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Tan Po Hui.</span> I'm a{" "}
-        <span className="font-bold">Web Developer</span> that recently completed
-        my <span className="font-bold">diploma program</span> in 2024. My core
-        stack is <span className="underline">React & Next.js</span>.
+        <span className="font-bold">Hello, I'm Tan Po Hui.</span> I'm a{' '}
+        <span className="font-bold">Frontend Developer</span> that recently
+        completed my{' '}
+        <span className="font-bold">
+          Diploma Program with Software Engenering
+        </span>{' '}
+        in 2024. My core stack is{' '}
+        <span className="underline">React & Next.js</span>.
       </motion.h1>
 
       <motion.div
@@ -81,11 +85,11 @@ const Intro = () => {
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition" //scale: tab; hover; active: button clicked
           onClick={() => {
-            setActiveSection("Contact");
+            setActiveSection('Contact');
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
+          Contact me here{' '}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
           {/* group the arrow and button together */}
         </Link>
@@ -93,16 +97,16 @@ const Intro = () => {
         {/* Button: for action; Anchor: for navigation */}
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/Internship-cv.pdf" // publc folder can be access by only "/"
+          href="/Resume.pdf" // publc folder can be access by only "/"
           download
         >
-          Download CV{" "}
+          Download CV{' '}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/pohui0712"
+          href="https://github.com/pohui888"
           target="_blank"
         >
           <FaGithubSquare />

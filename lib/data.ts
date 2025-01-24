@@ -1,107 +1,133 @@
-import React from "react";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import { FaNodeJs } from "react-icons/fa";
-import gogreenImg from "@/public/webGoGreen.png";
-import gamehubImg from "@/public/webGameHub.png";
-import issuetrackerImg from "@/public/webIssueTracker.png";
+import affordImg from '@/public/Afford.png';
+import alphaPropertyImg from '@/public/AlphaProperty.png';
+import openDevImg from '@/public/OpenDev.png';
+import gamehubImg from '@/public/webGameHub.png';
+import issuetrackerImg from '@/public/webIssueTracker.png';
+import React from 'react';
+import { FaReact } from 'react-icons/fa';
+import { LiaLaptopCodeSolid } from 'react-icons/lia';
+import { LuGraduationCap } from 'react-icons/lu';
 
 // Nav links
 export const links = [
   {
-    name: "Home",
-    hash: "#home",
+    name: 'Home',
+    hash: '#home',
   },
   {
-    name: "About",
-    hash: "#about",
+    name: 'About',
+    hash: '#about',
   },
   {
-    name: "Projects",
-    hash: "#projects",
+    name: 'Projects',
+    hash: '#projects',
   },
   {
-    name: "Skills",
-    hash: "#skills",
+    name: 'Skills',
+    hash: '#skills',
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: 'Experience',
+    hash: '#experience',
   },
   {
-    name: "Contact",
-    hash: "#contact",
+    name: 'Contact',
+    hash: '#contact',
   },
 ] as const; //more percise, be exactly as it's written, instead of random string {name: string, hash: string}[]
 
 export const experiencesData = [
   {
-    title: "Adia Pasific University",
-    location: "Bukit Jalil, KL",
+    title: 'Adia Pacific University',
+    location: 'Bukit Jalil, Kuala Lumpur',
     description:
-      "I study at APU d with Diploma in Information & Communication Technology with a specialism in Software Engineering. ",
+      'Studying at APU with Diploma in Information & Communication Technology with specialism in Software Engineering. ',
     icon: React.createElement(LuGraduationCap), //<LuGraduationCap/> not allow in the ts file as is an component
-    date: "2022",
+    date: '2022-2024',
   },
   {
-    title: "Front-End Development",
-    location: "codewithmosh by Mosh Hamedani",
+    title: 'React Developer Internship',
+    location: 'D7 Offices Sentul East',
     description:
-      "Studying React and Next.js with TypeScript involves not only understanding their core concepts but also applying them effectively in website development.",
+      'During my internship, I participated in building a new project from scratch, collaborating with other teams to develop a fully functional live website. I was responsible for developing the user-facing frontend interface.',
     icon: React.createElement(FaReact),
-    date: "2019 - 2021",
+    date: ' Aug - Nov, 2024',
   },
   {
-    title: "Back-End Development",
-    location: "codewithmosh by Mosh Hamedani",
+    title: 'Freelance',
+    location: 'Skudai, Johor',
     description:
-      "Studying JavaScript based framework, Express, MongoDB, Node.js. Striving forward on the path to becoming a full-stack developer.",
-    icon: React.createElement(FaNodeJs),
-    date: "2021 - present",
+      'After my internship, I took on some freelance projects through referrals from friends, primarily focusing on frontend development.',
+    icon: React.createElement(LiaLaptopCodeSolid),
+    date: '2025',
   },
 ] as const;
 
 export const projectsData = [
+  // https://game-hub-nine-wheat.vercel.app/
   {
-    title: "GoGreen",
+    title: 'Game Hub',
     description:
-      "A dynamically full-stack website for school assignment. It is separated to user and admin interfaces.Three.js also applied for the design.",
-    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Three.js"],
-    imageUrl: gogreenImg,
-  },
-  {
-    title: "Game-Hub",
-    description:
-      "A React website built by fetching API keys, featuring search, filter, and sort functions. It utilizes various libraries including Axios, Zustand, and TanStack Query.",
-    tags: ["React", "TypeScript", "Axios", "BootStrap", "Chakra.UI"],
+      'A React website built by fetching API keys, featuring search, filter, and sort functions. It utilizes various libraries including Axios, Zustand, and TanStack Query.',
+    tags: ['React', 'TypeScript', 'Axios', 'BootStrap', 'Chakra.UI'],
     imageUrl: gamehubImg,
   },
+
+  // ...no hosting
   {
-    title: "Issue-Tracker",
+    title: 'Issue Tracker',
     description:
-      "Admin dashboard that can assign issue to user by Google Account. Use Prisma to integrate with a database, also implement user authentication with NextAuth.js",
-    tags: ["React", "Next.js", "Prisma", "MySQL", "Tailwind", "NextAuth"],
+      'Admin dashboard that can assign issue to user by Google Account. Use Prisma to integrate with a database, also implement user authentication with NextAuth.js',
+    tags: ['React', 'Next.js', 'Prisma', 'MySQL', 'Tailwind', 'NextAuth'],
     imageUrl: issuetrackerImg,
+  },
+
+  // https://listing.alphabridgeco.com/
+  {
+    title: 'Alpha Property',
+    description:
+      'A real estate website that integrates data from the backend using GraphQL APIs. It focuses on various filter functions to ensure data is fetched more accurately.',
+    tags: ['Next.js', 'GraphQL', 'SEO', 'TypeScript', 'Tailwind'],
+    imageUrl: alphaPropertyImg,
+  },
+
+  // https://afford-frontend.vercel.app/
+  {
+    title: 'Afford',
+    description:
+      'A car management system featuring three interfaces: client, admin, and mechanic. These three roles are interconnected, enabling seamless interaction and functionality.',
+    tags: ['React', 'JavaScript', 'MongoDB', 'Express', 'NodeJS'],
+    imageUrl: affordImg,
+  },
+
+  //...no hosting
+  {
+    title: 'OpenDev Website',
+    description:
+      "A freelance project that developing a website with a modern user interface designed to showcase the client's services effectively.",
+    tags: ['Next.js', 'TypeScript', 'Shadcn', 'Tailwind', 'Aceternity UI'],
+    imageUrl: openDevImg,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "MySQL",
-  "PHP",
-  "Bootstrap",
-  "Express",
-  "Next Auth",
-  "Python",
-  "Framer Motion",
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'Next.js',
+  'Node.js',
+  'Git',
+  'Tailwind',
+  'Prisma',
+  'MongoDB',
+  'MySQL',
+  'GraphQL',
+  'Express',
+  'Next Auth',
+  'Python',
+  'Radix UI',
+  'Shadcn',
+  'Zustand',
 ] as const;
