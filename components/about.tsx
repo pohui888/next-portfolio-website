@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { useSectionInView } from '@/lib/hooks';
-import { motion } from 'framer-motion';
-import SectionHeading from './section-heading';
+import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
+import SectionHeading from "./section-heading";
 
 const About = () => {
-  const { ref } = useSectionInView('About');
+  const { ref } = useSectionInView("About");
 
   return (
     <motion.section
@@ -18,7 +18,12 @@ const About = () => {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        I am a recent graduate and a passionate{' '}
+        I am a Software Engineering student with 3 years of study experience,
+        actively involved in various projects and hackathons that strengthened
+        my technical and problem-solving skills. I am studying towards becoming
+        a full-stack developer and looking for an internship where I can learn,
+        grow, and gain real-world development experience.
+        {/* I am a recent graduate and a passionate{' '}
         <span className="font-medium">software developer.</span> During my
         2-year diploma program, I focused primarily on building{' '}
         <span className="font-medium">frontend development</span> skills while
@@ -30,13 +35,13 @@ const About = () => {
         and visually appealing applications while collaborating with
         cross-functional teams. I am eager to continue growing as a developer,
         exploring modern technologies, and contributing to impactful projects in
-        the industry.
+        the industry. */}
       </p>
-      <p>
+      {/* <p>
         <span className="font-medium italic">What's the future?</span> I would
         like to delve into WebGL and Three.js, combining them with web
         development to create more interactive webpages.
-      </p>
+      </p> */}
     </motion.section>
   );
 };
